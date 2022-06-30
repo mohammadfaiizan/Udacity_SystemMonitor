@@ -23,8 +23,8 @@ class System {
  private:
   Processor cpu_ = {};
   std::vector<Process> processes_ = {};
-  const std::string kernelVersion_;
   const std::string operatingSystem_;
+  const std::string kernelVersion_;
 };
 
 #endif
