@@ -1,7 +1,6 @@
 #include "processor.h"
 #include "linux_parser.h"
 
-
 Processor::Processor() :
     _prevIdle(LinuxParser::IdleJiffies()),
     _prevNonIdle(LinuxParser::ActiveJiffies()),
