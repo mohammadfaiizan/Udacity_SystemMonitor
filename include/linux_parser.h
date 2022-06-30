@@ -1,3 +1,4 @@
+#ifndef SYSTEM_PARSER_H
 #define SYSTEM_PARSER_H
 
 #include <fstream>
@@ -37,10 +38,10 @@ enum CPUStates {
   kSoftIRQ_,
   kSteal_,
   kGuest_,
-  kGuestNice_
+  kGuestNice_,
   END
 };
-std::vector<std::string> CpuUtilization();
+std::vector<long> CpuUtilization();
 long Jiffies();
 long ActiveJiffies();
 long ActiveJiffies(int pid);
